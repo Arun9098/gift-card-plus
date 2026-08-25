@@ -1,0 +1,260 @@
+/* ============================================
+   Archive Wrapper
+   ============================================ */
+
+.woocommerce-shop .woocommerce-archive-wrapper {
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 100%;
+}
+
+.woocommerce-shop .woocommerce-archive-wrapper .woocommerce-pagination,
+.woocommerce-shop .woocommerce-archive-wrapper .woocommerce-result-count {
+    float: unset;
+}
+
+/* ============================================
+   Page Title
+   ============================================ */
+
+.woocommerce-shop .page-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin: 0 0 2rem;
+    position: relative;
+}
+
+/* ============================================
+   Result Count & Ordering
+   ============================================ */
+
+.woocommerce-shop .woocommerce-result-count {
+
+    font-size: 14px;
+    color: #6b6b6b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+}
+
+.woocommerce-shop .woocommerce-ordering {
+    display: flex;
+    justify-content: flex-end;
+    float: unset;
+}
+
+.woocommerce-shop .woocommerce-ordering select {
+    font-size: 15px;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fff;
+    color: #2d2d2d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 220px;
+}
+
+/* ============================================
+   Product Grid
+   ============================================ */
+
+.woocommerce-shop .products {
+    list-style: none;
+    padding: 0;
+    margin: 0 -10px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(260px, 1fr));
+}
+
+/* ============================================
+   Product Card
+   ============================================ */
+
+.woocommerce-shop .woocommerce-archive-wrapper ul.products li.product {
+    background: #ffffff;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #0000001A;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    margin: 10px;
+    width: 100% !important;
+    max-width: calc(25% - 20px);
+
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.woocommerce-shop .product:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 2px 0px #00000005;
+}
+.woocommerce-shop .woocommerce-archive-wrapper ul.products li.product a{
+    width: 100%;
+    text-align: center;
+}
+/* ============================================
+   Out of Stock Badge
+   ============================================ */
+
+.woocommerce-shop .product.outofstock::before {
+    content: "OUT OF STOCK";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #dc2626;
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+/* ============================================
+   Product Image
+   ============================================ */
+
+.woocommerce-shop .woocommerce-LoopProduct-link img {
+    width: 100% !important;
+     min-height: 150px;
+    max-height: 170px;
+    height: 260px;
+    object-fit: contain;
+    background: #f4f4f4;
+    transition: transform 0.3s ease;
+}
+
+/* ============================================
+   Product Title
+   ============================================ */
+
+.woocommerce-shop .woocommerce-archive-wrapper .products .product .woocommerce-loop-product__title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a1a1a;
+    line-height: 1.5;
+}
+
+
+/* ============================================
+   Price
+   ============================================ */
+
+.woocommerce-shop .woocommerce-archive-wrapper .products .product .price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+/* ============================================
+   Add to Cart Button
+   ============================================ */
+.woocommerce-shop .woocommerce-archive-wrapper .woocommerce-message .button,
+.woocommerce-shop .woocommerce-archive-wrapper .add_to_cart,
+.woocommerce-shop .woocommerce-archive-wrapper .product .button {
+    padding: 13px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    font-family: var(--base-font-family);
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+.woocommerce-shop .woocommerce-archive-wrapper .added_to_cart {
+    color: #000;
+    margin-bottom: 0;
+}
+.woocommerce-shop .woocommerce-archive-wrapper .woocommerce-message .button{
+    max-width: fit-content;
+}
+.woocommerce-shop .woocommerce-archive-wrapper .woocommerce-message .button ,
+.woocommerce-shop .woocommerce-archive-wrapper .product .button {
+    background: #2A2A2A;
+    color: #fff;
+}
+.woocommerce-shop .woocommerce-archive-wrapper .product .button:hover {
+
+}
+/* Disabled button */
+.woocommerce-shop .product.outofstock .button:hover,
+.woocommerce-shop .product.outofstock .button {
+    background: #6b6b6b;
+    cursor: not-allowed;
+}
+
+/* ============================================
+   Pagination
+   ============================================ */
+
+.woocommerce-shop .woocommerce-pagination {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.woocommerce-shop .page-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.woocommerce-shop .woocommerce-archive-wrapper   .page-numbers a,
+.woocommerce-shop .woocommerce-archive-wrapper  .page-numbers span {
+    min-width: 44px;
+    height: 44px;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    color: #2d2d2d;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.woocommerce-shop .woocommerce-archive-wrapper   .page-numbers .current {
+    background: #1a1a1a;
+    color: #fff;
+    border-color: #1a1a1a;
+}
+.woocommerce-pagination ul.page-numbers{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 1180px) {
+    .woocommerce-shop .woocommerce-archive-wrapper ul.products li.product{
+    max-width: calc(33.33% - 20px) !important;
+}
+}
+@media (max-width: 991px) {
+    .woocommerce-shop .woocommerce-archive-wrapper ul.products li.product{
+    max-width: calc(50% - 20px) !important;
+}
+}
+@media (max-width: 767px) {
+.woocommerce-shop .woocommerce-archive-wrapper ul.products li.product{
+    max-width: 100% !important;
+}
+    .woocommerce-shop .woocommerce-ordering {
+        justify-content: flex-start;
+    }
+
+    .woocommerce-shop .woocommerce-ordering select {
+        width: 100%;
+    }
+}

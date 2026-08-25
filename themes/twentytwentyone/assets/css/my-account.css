@@ -1,0 +1,927 @@
+
+.woocommerce-MyAccount-content input[type=text], 
+.woocommerce-MyAccount-content  input[type=email], 
+.woocommerce-MyAccount-content input[type=url], 
+.woocommerce-MyAccount-content input[type=password], 
+.woocommerce-MyAccount-content input[type=search], 
+.woocommerce-MyAccount-content input[type=number], 
+.woocommerce-MyAccount-content input[type=tel], 
+.woocommerce-MyAccount-content input[type=date], 
+.woocommerce-MyAccount-content input[type=month], 
+.woocommerce-MyAccount-content input[type=week], 
+.woocommerce-MyAccount-content input[type=time], 
+.woocommerce-MyAccount-content input[type=datetime], 
+.woocommerce-MyAccount-content input[type=datetime-local], 
+.woocommerce-MyAccount-content input[type=color], 
+.woocommerce-MyAccount-content textarea, 
+.woocommerce-MyAccount-content select{
+  border-color: #000000;
+}
+.woocommerce form .form-row select{
+  border-width: 1px;
+}
+/* woocommerce container reset css */
+.woocommerce-account #main .woocommerce {
+    max-width: 1350px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* end woocommerce container reset css */
+.marketing-wrap,
+.woocommerce-MyAccount-content .preference-wrap,
+.gc-profile-update-wrapper,
+.gc-dashboard-wrapper {
+    padding: 52px;
+    border-radius: 20px;
+    color: #000000;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border: 1px solid #E5E5E5;
+}
+h2.main-heading.sm-h2 {
+    font-size: 26px;
+}
+/* Title */
+.gc-profile-update-wrapper h2,
+.gc-title {
+    color: #000000;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+/* Progress Bar */
+.gc-progress-wrapper {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.gc-progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #dcdcdc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gc-progress-fill {
+    height: 100%;
+    background: #ED018C;
+    border-radius: 10px;
+}
+
+.gc-progress-text {
+    color: #ED018C;
+    font-weight: 600;
+}
+
+/* Checklist */
+.gc-checklist {
+    margin: 30px 0;
+}
+
+.gc-check-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.gc-check-item.pending {
+    opacity: .5;
+
+
+}
+
+.gc-check-item.done {
+    opacity: 1;
+}
+
+.gc-form-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+}
+
+.gc-form-row:has(.gc-reset-password-link) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 50%;
+    margin-bottom: 32px;
+}
+.gc-form-row:has(.current-password) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 50%;
+    margin-bottom: 32px;
+}
+
+.gc-form-row .gc-reset-password-link {
+    display: block;
+    text-align: right;
+}
+
+.gc-form-row .gc-reset-password-link {
+    color: #000000;
+    font-size: 18px;
+}
+
+.gc-form-row .gc-form-group {
+    max-width: 50%;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.gc-form-row .gc-form-group.gc-form-password {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.gc-form-row .gc-reset-password-link,
+.woocommerce-page .gc-profile-form .form-row select,
+.gc-form-row .gc-form-group input {
+    width: 100%;
+    max-width: 80%;
+}
+
+.gc-form-row .gc-form-group .gc-form-group.gc-form-select {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+.gc-form-row .gc-form-group .woocommerce-input-wrapper {
+    width: 100%;
+}
+
+.gc-check-item.done .check-icon {
+    color: #00c853;
+    font-size: 22px;
+}
+
+
+
+
+/* Button */
+
+
+.gc-complete-btn:hover {
+    color: #ED018C;
+    border-color: #ED018C;
+}
+
+.invalid-data {
+    border: 2px solid red !important;
+    background: #ffe3e3 !important;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#save-preferences.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* //My wishlist CSS */
+
+.all-cards-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cards-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.cards-filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.marketing-wrap .save-preferences,
+.gc-dashboard-wrapper .gc-complete-btn,
+.gc-profile-form .btn.btn-primary {
+    font-weight: 600;
+}
+
+.filter-search {
+    position: relative;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+
+.cards-search-input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.search-icon {
+    font-size: 16px;
+}
+
+.filter-dropdown select {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.cards-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 25px 1fr 25px 1fr 25px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.card-item {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    padding: 12px;
+    position: relative;
+    text-align: center;
+}
+
+.card-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card-title {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.wishlist-btn {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #d0006f;
+}
+
+.load-more-wrapper {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.load-more-btn {
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    background: #000000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bottom-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 50px;
+    gap: 25px;
+}
+
+.promo-box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.business-box {
+    background: #17b7c9;
+    color: #000000;
+}
+
+.help-box {
+    background: #f3f3f3;
+}
+
+.promo-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    background: #fff;
+    cursor: pointer;
+}
+
+.logged-in.woocommerce-account #main .type-page.status-publish .woocommerce {
+    display: block;
+
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-navigation {
+    width: 100%;
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-x: auto;
+    background: #ECECF0;
+    border-radius: 24px;
+    padding: 11px 18px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-navigation li span.nav-icon svg {
+    max-width: 20px;
+    height: auto;
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-navigation li a span {
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-navigation ul::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-navigation li {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 24px;
+    margin-bottom: 0 !important;
+    padding: 8px 32px;
+    margin-right: 5px;
+
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-navigation li a {
+    text-decoration: none !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8px;
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-navigation li.is-active {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: #ED018C;
+    border-radius: 24px;
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-navigation li.is-active span.nav-icon svg path {
+    fill: #fff;
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-navigation li.is-active span {
+    color: #fff;
+    font-weight: 600;
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content {
+    max-width: 100%;
+    width: 100%;
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content p,
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content p {
+    font-size: 26px;
+    font-weight: 400;
+    color: #858593;
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content .gc-profile-form label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 12px;
+}
+
+
+
+.woocommerce-account .gc-progress-wrapper .gc-progress-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.woocommerce-account .woocommerce .woocommerce-MyAccount-content .gc-progress-wrapper .gc-progress-detail p {
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content p.gc-email-note {
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 32px;
+    color: #636466;
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content .gc-subtitle,
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content p.gc-title {
+    margin-bottom: 48px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .marketing-wrap .checkbox-wrap label {
+    font-size: 18px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .marketing-wrap .marketing-title {
+    font-size: 26px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .registration-step .preference-wrap p.sub-heading {
+    margin-bottom: 48px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .preference-wrap p.sub-heading,
+.woocommerce-account .woocommerce-MyAccount-content .registration-step .marketing-wrap p {
+    font-size: 26px;
+    line-height: normal;
+    color: #000000;
+    margin-bottom: 24px;
+
+
+}
+.woocommerce-account .woocommerce-MyAccount-content .preference-wrap p.sub-heading{
+    font-size: 20px;
+}
+
+.preference-wrap .preferences-form .sm-main-form {
+    max-width: 100%;
+}
+
+.preference-wrap .preferences-form .sm-main-form .selected-preferences {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wishlist-page-gc-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 48px;
+    margin-bottom: 32px;
+}
+
+.wishlist-page-gc-wrapper .search-product {
+    min-height: 68px;
+    width: 100%;
+    border: 1px solid #ED018C;
+    padding: 0 33px;
+    border-radius: 40px;
+    font-size: 21px;
+
+}
+
+.wishlist-page-gc-wrapper .gc-filters {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 24px;
+}
+
+#gc-section .wishlist-page-gc-wrapper .search:after {
+    content: "";
+    position: absolute;
+    background: #000;
+    width: 2px;
+    right: -25px;
+    top: 50%;
+    height: 70%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+}
+
+.gc-filters .gc-filter-select {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border: 1px solid #D0D5DD;
+    /*padding: 18px;*/
+    height: 63px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7' fill='none'%3E%3Cpath d='M0.833496 0.835938L5.8335 5.83594L10.8335 0.835938' stroke='%23717680' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+    border-radius: 14px;
+    background-position-y: 50%;
+}
+
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content .gc-card p.gc-title {
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.wishlist-card-wrapper .gc-wishlist-btn {
+    position: static;
+    margin-left: auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: auto;
+    height: auto;
+}
+
+.wishlist-card-wrapper .gc-wishlist-btn svg {
+    width: 23px;
+    height: 23px;
+    display: block;
+}
+section.my-wishlist-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 60px;
+    gap: 40px;
+    background: #E0F6FF;
+    border-radius: 0 0 60px 60px;
+}
+.my-wishlist-wrapper .banner-left{
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+.my-wishlist-page-title .icon {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+}
+.my-wishlist-page-title .icon svg{
+    width: 100%;
+    height: 100%;
+}
+.my-wishlist-page-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+.my-wishlist-page-subtitle{
+    margin-bottom: 0;
+    font-size: 28px;
+    font-weight: 400;
+}
+.my-wishlist-wrapper .banner-right{
+    max-width: 600px;
+    width: 100%;
+}
+.entry-content .myaccount-page-content{
+    color: #858593;
+    font-family: Verdana;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.shop-business-template-2c-need-help-wrap .home-shop-business-item>div>div{
+    padding: 60px 16px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+.shop-business-template-2c-need-help-wrap .home-recived-gift-card>div>div{
+    background: #F8F9FF;
+}
+
+.body-user-login-front .shop-business-template-2c-need-help-wrap .home-shop-gift-main-wrp{
+    display: block;
+}
+.page-wishlist.shop-business-template-2c-wrap .home-shop-gift-main-wrp, 
+.page-reminder.shop-business-template-2c-wrap .home-shop-gift-main-wrp {
+    display: block;
+}
+.page-wishlist.shop-business-template-2c-need-help-wrap {
+    padding-top:40px; 
+}
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content .page-wishlist p, 
+.woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content .page-reminder p{
+    color:#000;
+    font-size:18px;
+    font-family: 'Verdana';
+}
+.woocommerce .my-reminders-wrapper .events-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 120px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.offers-search-filter-wrap .offers-search-clear {
+    display: flex;
+}
+
+.offers-search-filter-wrap .offers-search-clear:hover {
+    color: #202224;
+}
+
+.offers-search-filter-wrap .offers-search-clear {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    line-height: 1;
+    color: #344054;
+    cursor: pointer;
+    padding: 4px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:1280px) {
+    .wishlist-page-gc-wrapper .search-product {
+        min-height: 58px;
+        font-size: 18px;
+    }
+
+    .gc-filters .gc-filter-select {
+        min-height: 58px;
+        height: 58px;
+    }
+    .my-wishlist-wrapper .banner-right{
+        max-width: 500px;
+    }
+}
+@media (max-width:1100px){
+    .my-wishlist-wrapper .banner-right {
+        max-width: 450px;
+    }
+}
+@media (max-width:991px) {
+    .my-wishlist-wrapper .banner-right {
+        max-width: 320px;
+    }
+    #gc-section .wishlist-page-gc-wrapper .search:after {
+        display: none;
+    }
+
+    .marketing-wrap,
+    .woocommerce-MyAccount-content .preference-wrap,
+    .gc-profile-update-wrapper,
+    .gc-dashboard-wrapper {
+        padding: 42px;
+    }
+
+    .gc-profile-update-wrapper,
+    .gc-dashboard-wrapper {
+        padding: 52px 32px;
+    }
+
+    .wishlist-page-gc-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 24px;
+    }
+
+    .wishlist-page-gc-wrapper .search {
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+    }
+
+    .woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content .gc-subtitle,
+    .woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content p.gc-title {
+        font-size: 20px;
+    }
+    .my-wishlist-page-title .icon{
+        width: 40px;
+        height: 40px;
+    }
+    .entry-content .myaccount-page-content{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:767px) {
+    .entry-content .myaccount-page-content,
+    .woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content .gc-subtitle{
+        font-size: 16px;
+    }
+    .gc-form-row .gc-form-group {
+        max-width: 100%;
+    }
+
+    .wishlist-page-gc-wrapper .gc-filters {
+        gap: 18px;
+    }
+    section#gc-section .search .search-submit {
+        top: 16px;
+    }
+    .marketing-wrap,
+    .woocommerce-MyAccount-content .preference-wrap,
+    .gc-profile-update-wrapper,
+    .gc-dashboard-wrapper {
+        padding: 48px 16px;
+    }
+
+    .myaccount-page-title {
+        font-size: 28px;
+    }
+
+    .myaccount-page-content {
+        font-size: 18px;
+        color: #636466;
+        margin-bottom: 24px;
+    }
+
+    .gc-progress-text {
+        font-size: 22px;
+    }
+    input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color], textarea, select{
+        font-size: 14px;
+    }
+
+    .woocommerce-account .woocommerce-MyAccount-content .registration-step .marketing-wrap p,
+    .woocommerce-account .woocommerce-MyAccount-content .registration-step .preference-wrap p.sub-heading,
+    .woocommerce-account .woocommerce .woocommerce-MyAccount-content .gc-progress-wrapper .gc-progress-detail p,
+    .woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content .gc-subtitle,
+    .woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content p.gc-title,
+    .woocommerce-account .type-page.status-publish .woocommerce-MyAccount-content p.gc-email-note {
+        font-size: 16px;
+    }
+
+    .woocommerce-account .woocommerce-MyAccount-content .marketing-wrap .marketing-title,
+    .woocommerce-MyAccount-content .preference-wrap .step-heading h2,
+    .gc-profile-update-wrapper h2,
+    .gc-title {
+        font-size: 22px;
+    }
+
+    .woocommerce-account .woocommerce-MyAccount-content .registration-step .preference-wrap p.sub-heading {
+        margin-bottom: 32px;
+    }
+
+    .woocommerce-account .type-page.status-publish .woocommerce-MyAccount-navigation li {
+        padding: 8px 14px;
+    }
+
+    .woocommerce-account .type-page.status-publish .woocommerce-MyAccount-navigation li a span {
+        font-size: 14px;
+    }
+
+    .gc-progress-wrapper {
+        margin-bottom: 24px;
+    }
+
+    .gc-form-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .marketing-wrap .save-preferences,
+    .gc-dashboard-wrapper .gc-complete-btn,
+    .gc-profile-form .btn.btn-primary {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .gc-filters .gc-filter-select {
+        min-height: 50px;
+        height: 50px;
+        padding: 10px 16px;
+    }
+
+    .gc-form-row:has(.gc-reset-password-link),
+    .gc-form-row .gc-reset-password-link,
+    .woocommerce-page .gc-profile-form .form-row select,
+    .gc-form-row .gc-form-group input {
+        max-width: 100%;
+    }
+    .wishlist-page-gc-wrapper .search{
+        max-width: 100%;
+    }
+    .wishlist-page-gc-wrapper .search-product {
+        min-height: 50px;
+        font-size: 18px;
+    }
+    section.my-wishlist-wrapper{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        gap: 23px;
+        padding: 24px 16px;
+    }
+    section.my-wishlist-wrapper .h1{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 8px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .my-wishlist-page-title,.my-wishlist-page-subtitle{
+        font-size: 20px;
+    }
+    .my-wishlist-page-title{
+        margin-top: 24px;
+    }
+    .my-wishlist-page-title .icon{
+        width: 32px;
+        height: 32px;
+    }
+    .my-wishlist-wrapper .banner-right{
+        max-width: 100%;
+    }
+    .wishlist-card-wrapper .gc-slide{
+        -ms-grid-columns: 1fr 16px 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 16px;
+    }
+    .wishlist-card-wrapper .gc-slide .gc-card {
+        padding: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border: 0;
+    }
+    .wishlist-card-wrapper .gc-wishlist-btn svg{
+        width: 18px;
+        height: 18px;
+    }
+    .woocommerce-account .type-page.status-publish .woocommerce-MyAccount-navigation ul{
+        margin: 0 -15px;
+    }
+    
+    
+}

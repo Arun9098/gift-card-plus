@@ -1,0 +1,590 @@
+
+/* ===============================
+   OFFERS LIST TABLE (Frontend)
+   Figma: search + buttons bar, table, pagination
+================================ */
+.offers-listing-page-frontend {
+  background: #F4F4F4;
+  min-height: 60vh;
+  margin-bottom: 0;
+}
+
+.offers-listing-page-frontend .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px 32px;
+}
+
+/* Page title – large, bold, left-aligned */
+.offers-listing-page-frontend .offers-page-title-frontend {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #101828;
+  margin: 0 0 24px;
+  padding: 0;
+  padding-top: 32px;
+  line-height: 1.2;
+}
+
+/* Top bar: search left, buttons right */
+.offers-top-bar-frontend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px 24px;
+  margin: 0 -24px 24px;
+  border-radius: 0;
+}
+
+.offers-top-bar-frontend .search-container {
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.offers-top-bar-frontend .search-container {
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex: auto;
+  align-items: center;
+}
+
+
+/* Tabs: All offers / Personalized URLs */
+.offers-tabs-frontend {
+  display: flex;
+  gap: 0;
+  margin: 0 0 8px;
+  border-bottom: 1px solid #D0D5DD;
+}
+
+.offers-tab-btn-frontend {
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #667085;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.offers-tab-btn-frontend:hover {
+  color: #101828;
+  background: rgba(16, 24, 40, 0.04);
+}
+
+.offers-tab-btn-frontend.is-active {
+  color: #101828;
+  border-bottom-color: #101828;
+  background: #fff;
+}
+
+.offers-tabpanel-frontend[hidden] {
+  display: none !important;
+}
+
+.offers-top-bar-purl-frontend {
+  justify-content: flex-start;
+}
+
+.offers-purl-url-cell {
+  max-width: 320px;
+  word-break: break-all;
+}
+
+.offers-purl-link {
+  color: #175cd3;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.offers-purl-link:hover {
+  color: #0d47a1;
+}
+
+.offers-purl-missing {
+  color: #98a2b3;
+}
+
+.offers-purl-products-cell {
+  min-width: 180px;
+}
+
+.offers-product-list-frontend {
+  margin: 0;
+  padding-left: 1.15rem;
+  list-style: disc;
+  color: #101828;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.offers-product-list-frontend li {
+  margin-bottom: 4px;
+}
+
+.offers-product-list-frontend .offer-product-sku {
+  color: #667085;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.offers-products-all {
+  font-weight: 600;
+  color: #101828;
+}
+
+.offers-products-empty {
+  color: #98a2b3;
+}
+
+.offers-purl-related-cell {
+  min-width: 220px;
+}
+
+.offers-purl-related-list-frontend {
+  margin: 0;
+  padding-left: 1.15rem;
+  text-align: left;
+  list-style: disc;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.offers-purl-related-list-frontend li {
+  margin-bottom: 8px;
+}
+
+.offers-purl-related-id {
+  color: #667085;
+  font-weight: 600;
+}
+
+.offers-purl-related-title {
+  font-weight: 600;
+  color: #101828;
+}
+
+.offers-purl-related-edit {
+  font-size: 13px;
+  margin-left: 4px;
+}
+
+.offers-top-bar-frontend .search-container .search-icon {
+  position: absolute;
+  left: 10px;
+  right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #667085;
+}
+
+.offers-top-bar-frontend .search-container>input {
+  margin: 0;
+  padding-left: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 2px 0px #1018280D;
+  color: #667085;
+  width: 100%;
+}
+
+.offers-top-bar-frontend .search-container .search-icon {
+  position: absolute;
+  left: 10px;
+  right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #667085;
+}
+
+.offers-search-form-frontend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.offers-search-wrap-frontend {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.offers-search-input-frontend {
+  width: 100%;
+  height: 44px;
+  padding: 0 16px 0 44px;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #101828;
+  background: #fff;
+  outline: none;
+}
+
+.offers-search-input-frontend::placeholder {
+  color: #98A2B3;
+}
+
+.offers-search-input-frontend:focus {
+  border-color: #000;
+  box-shadow: 0 0 0 1px #000;
+}
+
+.offers-search-icon-frontend {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #667085;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offers-clear-search-frontend {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.offers-clear-search-frontend:hover {
+  color: #E5E7EB;
+}
+
+.offers-actions-frontend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-add-new-frontend {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-add-new-frontend:hover {
+  background: #333;
+  color: #fff;
+}
+
+.btn-export-frontend {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.btn-export-frontend:hover {
+  border-color: #333;
+  background: #F9FAFB;
+}
+
+.btn-export-icon {
+  flex-shrink: 0;
+}
+
+/* Table wrapper – white content area */
+.offers-table-wrapper-frontend {
+  overflow-x: auto;
+  background: #fff;
+}
+
+.offers-table-frontend {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.offers-table-frontend thead {
+  background: #F9FAFB;
+}
+
+.offers-table-frontend th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #101828;
+  border-bottom: 1px solid #E5E7EB;
+  white-space: nowrap;
+  position: relative;
+  padding-right: 26px;
+}
+
+/* DataTables sort icons – up/down triangles */
+.offers-table-frontend th.sorting:after {
+  content: "\25B2\A\25BC";
+  white-space: pre;
+  line-height: 0.9;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  font-size: 10px;
+}
+
+.offers-table-frontend th.sorting_asc:after {
+  content: "\25B2";
+  white-space: normal;
+  line-height: 1;
+}
+
+.offers-table-frontend th.sorting_desc:after {
+  content: "\25BC";
+  white-space: normal;
+  line-height: 1;
+}
+
+.offers-table-frontend th.sortable a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.offers-table-frontend th.sortable a:hover {
+  color: #000;
+}
+
+.offers-table-frontend th .sort-indicator {
+  opacity: 0.6;
+  font-size: 12px;
+}
+
+.offers-table-frontend td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #E5E7EB;
+  color: #374151;
+  vertical-align: middle;
+}
+
+.offers-table-frontend tbody tr:hover {
+  background: #F9FAFB;
+}
+
+.offers-no-results-frontend {
+  text-align: center;
+  padding: 48px 16px !important;
+  color: #6B7280;
+}
+
+/* Status badges – pill style: Pending (yellow), Active (green), Deactivated (grey) */
+.offers-status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #037847;
+}
+
+.offers-status-badge.status-pending {
+  background: #FDE047;
+}
+
+.offers-status-badge.status-active {
+  background: #ECFDF3;
+}
+
+.offers-status-badge.status-deactivated {
+  background: #E5E7EB;
+  color: #4B5563;
+}
+
+/* View/Edit link – blue underlined */
+.offers-details-link {
+  color: #2563EB;
+  text-decoration: underline;
+}
+
+.offers-details-link:hover {
+  color: #1D4ED8;
+}
+
+/* DataTables: hide default search (we use custom search bar) */
+.offers-listing-page-frontend .dataTables_filter {
+  display: none;
+}
+
+/* Hide table info text – keep length menu and pagination */
+.offers-listing-page-frontend .dataTables_info {
+  display: none;
+}
+
+/* DataTables controls (Show X entries) and info */
+.offers-listing-page-frontend .offers-dt-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.offers-listing-page-frontend .dataTables_length select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #D0D5DD;
+  margin: 0 6px;
+}
+
+/* DataTables bottom bar – Show entries (left), pagination (right) */
+.offers-listing-page-frontend .offers-dt-pagination-wrap {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.offers-listing-page-frontend .offers-dt-pagination-wrap .dataTables_length {
+  margin: 0;
+}
+
+.offers-listing-page-frontend .offers-dt-pagination-wrap .dataTables_length label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #374151;
+  margin: 0;
+}
+
+.offers-listing-page-frontend .offers-dt-pagination-wrap .dataTables_paginate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.offers-listing-page-frontend .offers-dt-pagination-wrap .paginate_button,
+.offers-listing-page-frontend #offers-table-frontend_wrapper .dataTables_paginate .paginate_button {
+  min-width: 32px;
+  height: 32px;
+  padding: 0 8px;
+  margin: 0 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #101828 !important;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+
+.offers-listing-page-frontend .offers-dt-pagination-wrap .paginate_button:hover:not(.disabled),
+.offers-listing-page-frontend #offers-table-frontend_wrapper .dataTables_paginate .paginate_button:hover:not(.disabled) {
+  background: #F3F4F6 !important;
+  color: #101828 !important;
+}
+
+.offers-listing-page-frontend .offers-dt-pagination-wrap .paginate_button.current,
+.offers-listing-page-frontend #offers-table-frontend_wrapper .dataTables_paginate .paginate_button.current {
+  background: #000 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.offers-listing-page-frontend .offers-dt-pagination-wrap .paginate_button.disabled,
+.offers-listing-page-frontend #offers-table-frontend_wrapper .dataTables_paginate .paginate_button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Pagination bar – dark gray footer (legacy/server-side) */
+.offers-pagination-bar-frontend {
+  margin-top: 24px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers-pagination-links-frontend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.offers-pagination-links-frontend a,
+.offers-pagination-links-frontend span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #E5E7EB;
+  text-decoration: none;
+  background: transparent;
+  transition: background 0.2s, color 0.2s;
+}
+
+.offers-pagination-links-frontend a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.offers-pagination-links-frontend .current {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .offers-top-bar-frontend {
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .offers-search-form-frontend {
+    max-width: none;
+  }
+
+  .offers-actions-frontend {
+    justify-content: flex-end;
+  }
+}

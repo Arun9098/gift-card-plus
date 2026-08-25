@@ -1,0 +1,300 @@
+.category-second-list-container .category-create-view .cat-response-message {
+    color: black;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.112;
+}
+
+
+/* // Error CSS for Bulk dd recipient in manual order page  */
+
+#csv-preview-body td.error {
+    position: relative;
+}
+
+#csv-preview-body td.error::after {
+    content: attr(data-error);
+    display: none;
+    /* 👈 Hide by default */
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background: #ff9999;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 100;
+}
+
+
+header.error-header {
+    border-bottom: 1px solid #000;
+}
+ .not-found .page-content{
+    margin-top:10px;
+}
+.error-404-page{
+    padding:30px 0;
+}
+
+
+
+
+
+/* #csv-preview-body td.error:hover::after {
+    display: block;
+} */
+#csv-preview-body td.error:hover::after {
+    display: block;
+}
+
+#csv-preview-body td.error::after {
+    content: attr(data-error);
+}
+
+table.order-table .filter-box .status-checkboxes {
+    text-align: left;
+    padding: 0 20px;
+}
+
+table.brand-table .filter-box .status-checkboxes {
+    text-align: left;
+    padding: 0 20px;
+}
+
+.payment-method-section .nav-item .nav-link.disabled {
+    border-radius: 0;
+    border: 1px solid #d9d9d985;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    opacity: 0.6;
+    text-align: left;
+    display: block;
+    color: #0000007a;
+    cursor: not-allowed;
+}
+
+.product-details-wrapper .link-btn .view-details-text {
+    text-decoration: underline;
+    text-decoration-color: #676767;
+    text-underline-offset: 4px;
+}
+
+.dataTables_wrapper table.dataTable#order-history-table {
+    border-radius: 8px;
+    overflow: auto;
+    border: 1px solid #EAECF0;
+    background: #fff;
+    margin-bottom: 0;
+    border-collapse: collapse;
+    display: block;
+}
+
+.brand-table thead .active_filter_wrapper .filter-box.active_filter .checkbox-group {
+    text-align: left;
+    padding: 0 20px;
+}
+
+#order-summary-body .multiple-gift-cards .gift-card-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+#order-summary-body .multiple-gift-cards .gift-card-entry p {
+    margin: 0;
+}
+
+#order-summary-body .multiple-gift-cards .gift-card-entry img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 6px;
+}
+
+#createUserForm .error-field {
+    color: black !important;
+}
+
+#orderHistoryContent .export-list-message span {
+    color: #000000 !important;
+    margin-top: 10px;
+    padding: 12px;
+    background: #C500081A;
+    width: 100%;
+    border: 1px solid #C50008;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.112;
+}
+
+#orderHistoryContent .export-list-message {
+    margin-bottom: 10px;
+}
+
+.home-slider .slider-item h2 em {
+    color: #ED018C;
+}
+
+/* Page numbers */
+#pagination .pagination .page-item.number a {
+    background: #fff;
+    /* border-color: #fff; */
+    color: #000 !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 1;
+    font-size: 14px;
+    margin: 0 3px;
+    padding: 0;
+    display: inline-grid;
+    place-items: center;
+}
+
+/* Active page */
+#pagination .pagination .page-item.number.active a {
+    background: #000;
+    border-color: #000;
+    color: #fff !important;
+}
+
+/* Prev/Next buttons */
+#pagination .pagination .page-item.prev a,
+#pagination .pagination .page-item.next a {
+    background: transparent;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    padding: 0 10px;
+}
+
+.place-order-section #order-error-message span {
+    font-weight: bold;
+}
+
+#brand-list-view #brands-table_wrapper #brands-table_info {
+    display: block;
+}
+
+#final-preview-section .validate-rows-message .valid-rows {
+    font-weight: 400;
+    color: #037847;
+    font-family: 'Gotham';
+    font-size: 20px;
+    line-height: 133%;
+}
+
+#final-preview-section .validate-rows-message .invalid-rows {
+    font-weight: 400;
+    color: #ED1E09;
+    font-family: 'Gotham';
+    font-size: 20px;
+    line-height: 133%;
+}
+
+.product-container .preview-header .edit-error-btn:hover {
+    color: #000;
+    background-color: #ffca2c;
+    border-color: #ffca2c;
+}
+
+.product-container .preview-header .remove-error-btn:hover {
+    color: #fff;
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+}
+
+/* Bulk Create Category code starts from here */
+.preview-header {
+    margin: 30px 20px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.preview-header .btn {
+    margin-left: 10px;
+}
+
+.preview-container.csv-preview {
+    margin: 30px 20px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+#csv-preview-table,
+#final-preview-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#csv-preview-table th,
+#csv-preview-table td,
+#final-preview-table th,
+#final-preview-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.disable-for-user {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed !important;
+    background-color: #f5f5f5;
+    color: #999;
+    border-color: #ddd;
+}
+
+.disable-for-user:hover {
+    background-color: #f5f5f5;
+    color: #999;
+    cursor: not-allowed !important;
+}
+
+.product-details-wrapper .styled-placeholder .highlight {
+    color: #007bff;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: line-through;
+    margin-top: 8px;
+}
+
+.owl-carousel.product-tag-carousel .owl-stage {
+    display: flex;
+    padding: 20px 0;
+}
+
+.tag-item,
+.tag-item>div {
+    height: 100%;
+}
+
+.action-block.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px 0;
+}
+
+@media screen and (max-width:767px){
+.error-404-page h1.page-title {
+    font-size: 38px;
+}
+
+.error-404-page .page-content p {
+    font-size: 18px;
+}
+}

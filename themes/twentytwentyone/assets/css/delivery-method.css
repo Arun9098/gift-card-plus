@@ -1,0 +1,488 @@
+.delivery-method-wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.delivery-method-wrapper .delivery-title {
+    font-size: 24px;
+    line-height: 0.75;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.delivery-method-wrapper .delivery-option:first-child {
+    margin-bottom: 15px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #BDBDBD;
+}
+.delivery-method-wrapper .delivery-option{
+    display: flex;
+}
+.delivery-top-block .delivery-label {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.delivery-method-wrapper .delivery-top-block {
+    flex: 1;
+}
+.delivery-description {
+    font-size: 14px;
+}
+.delivery-method-wrapper .delivery-description a{
+    text-decoration: none;
+    color: inherit;
+}
+.schedule-delivery-container .schedule-delivery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    background: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.schedule-delivery-header h4 {
+    margin: 0;
+}
+.schedule-delivery-container .schedule-note {
+    padding: 12px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #D9D9D9;
+    background-color: #FFFFFF;
+    line-height: 1.1;
+}
+.schedule-delivery-wrapper .default-text {
+    margin-right: 14px;
+    color: #E0BE0E;
+}
+.schedule-delivery-wrapper .schedule-entry .calendar-icon {
+    font-size: 14px;
+    color: #0086A3;
+}
+.schedule-delivery-wrapper .schedule-entry .calendar-icon{
+    width: 24px;
+    height: 24px;
+    background: #F2F2F2;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+.schedule-delivery-wrapper .schedule-entry .selected-datetime {
+    font-size: 18px;
+    color: #000;
+}
+.schedule-delivery-table td .gift-card-entry {
+    margin-bottom: 10px;
+}
+
+.delivery-method-container .apply-schedule-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background: #E3F2F5;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 14px;
+}
+.gift-card-name-value-wrapper,
+.schedule-entry {
+	border-left: 4px solid #ccc;
+	padding-left: 10px;
+	transition: all 0.2s ease-in-out;
+}
+
+.gift-card-name-value-wrapper:hover,
+.schedule-entry:hover {
+	border-left-color: #0073aa; /* WooCommerce blue */
+	background-color: #f0f8ff;
+}
+
+.delivery-method-container .apply-schedule-wrapper label {
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.card-activation-wrapper .card-activation-title {
+    margin-bottom: 24px;
+}
+.schedule-delivery-wrapper .schedule-delivery-table thead th{
+    padding: 10px 10px 40px;
+    border-bottom: 0;
+    font-size: 20px;
+    line-height: normal;
+    background: transparent;
+}
+.schedule-delivery-table td{
+    font-size: 18px;
+    line-height: normal;
+}
+
+.schedule-delivery-table tbody tr {
+    border-bottom: 1px solid #D6D6D6;
+    background: #fff;
+    transition: background-color 0.2s ease-in-out;
+}
+.schedule-delivery-table tbody tr:last-child{
+    border-bottom:0 ;
+}
+.delivery-method-container .apply-schedule-wrapper .apply-schedule-checkbox{
+    width: 20px;
+    height: 20px;
+}
+
+.delivery-options .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.delivery-options .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.delivery-options .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #E9EAEB;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.delivery-options .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.delivery-options input:checked+.slider {
+    background-color: #007AFF;
+}
+
+.delivery-options input:checked+.slider:before {
+    transform: translateX(14px);
+}
+.delivery-options {
+    display: flex;
+    justify-content: space-between;
+}
+.delivery-options .delivery-left, .delivery-options .delivery-right {
+    width: 48%;
+}
+.schedule-delivery-container .icon-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.delivery-method-container .schedule-delivery-container .apply-schedule-wrapper{
+    display: none;
+}
+.delivery-method-container .schedule-delivery-container:has(.schedule-delivery-wrapper.open) .apply-schedule-wrapper{
+    display: flex;
+}
+.schedule-delivery-wrapper:not(.open) .schedule-content {
+    display: none;
+}
+
+.schedule-delivery-wrapper {
+    max-height: 0;
+    overflow: visible;
+    visibility: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 16px;
+}
+
+.schedule-delivery-wrapper.open {
+    max-height: fit-content;
+    padding: 0 16px 16px;
+    visibility: visible;
+}
+.schedule-delivery-container {
+    border-radius: 8px;
+    margin-top: 34px;
+    overflow: visible;
+    background: #fff;
+}
+
+.schedule-delivery-header .accordion-toggle {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.schedule-delivery-table th,
+.schedule-delivery-table td {
+    border: none;
+    padding: 10px;
+    text-align: left;
+}
+.calendar-icon:hover {
+    transform: scale(1.1);
+}
+
+.card-activation-wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    padding-top: 30px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.activation-expiry-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.activation-expiry-wrapper label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+/* //Css for the schedule delivery */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flatpickr-calendar {
+    z-index: 10000 !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    animation: fadeIn 0.2s ease-out;
+}
+
+
+
+
+.expiry-input-group {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.expiry-input-group input[type="number"] {
+    flex: 1;
+}
+
+.expiry-input-group select {
+    width: 150px;
+}
+
+/* .calendar-td{
+    position:relative;
+} */
+.animation-modal {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 300px;
+    z-index: 999;
+}
+
+.animation-modal ul {
+    list-style: none;
+    padding: 0;
+}
+
+.animation-modal li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.animation-modal li:hover {
+    background-color: #f1f1f1;
+}
+
+.email-animation-preview img {
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+.d-none {
+    display: none;
+}
+
+/* Schedule delivery CSS :start */
+
+
+
+
+
+
+.schedule-delivery-table td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+/* .gift-card-entry {
+    margin-bottom: 5px;
+    padding: 4px 8px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    display: inline-block;
+} */
+
+.schedule-entry {
+    margin-bottom: 8px;
+    /* position: absolute; */
+}
+
+
+
+.calendar-icon {
+    margin-right: 6px;
+    font-size: 16px;
+    color: #888;
+}
+
+.calendar-icon:hover {
+    color: #2c7be5;
+    cursor: pointer;
+}
+
+.calendar-container {
+    position: relative;
+    z-index: 10;
+}
+
+/* Schedule delivery css END HERE   */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.date-time-picker {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+
+
+.activation-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.activation-expiry-type,
+.activation-expiry-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.activation-expiry-type label,
+.activation-expiry-date label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.activation-expiry-type select,
+.activation-expiry-date input {
+    width: 250px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.activation-expiry-date input[type="datetime-local"] {
+    position: relative;
+}
+
+.activation-expiry-date input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.card-activation-fields {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+}
+
+#continue-step {
+    float: right;
+}
+
+@media (max-width:991px){
+    .delivery-method-wrapper .delivery-title .schedule-delivery-header h4,.card-activation-wrapper .card-activation-title{
+        font-size: 22px;
+    }
+}
+@media (max-width:767px){
+    .delivery-method-wrapper .delivery-title .schedule-delivery-header h4,.card-activation-wrapper .card-activation-title{
+        font-size: 20px;
+    }
+    .schedule-delivery-wrapper .default-text{
+        margin-right: 5px;
+    }
+    .schedule-delivery-container .schedule-note{
+        font-size: 12px;
+    }
+    .delivery-method-container .apply-schedule-wrapper label{
+        font-size: 14px;
+    }
+    .manual-order .order-info .text-muted {
+        font-size: 14px;
+    }
+}

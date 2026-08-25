@@ -1,0 +1,107 @@
+.tax-product_tag .custom-product-tag-wrapper ul.products li.product {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #0000001A;
+    -webkit-box-shadow: 0px 1px 0px 0px #00000005;
+    box-shadow: 0px 1px 0px 0px #00000005;
+    -webkit-box-shadow: 0px 2px 2px 0px #00000005;
+    box-shadow: 0px 2px 2px 0px #00000005;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.tax-product_tag .custom-product-tag-wrapper ul.products li.product:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.tax-product_tag .custom-product-tag-wrapper ul.products {
+    margin: 0 -10px;
+}
+
+.tax-product_tag .custom-product-tag-wrapper ul.products>li {
+    margin: 10px;
+}
+
+/* Remove default Woo styles */
+.tax-product_tag .custom-product-tag-wrapper ul.products li.product .button {
+    display: none !important;
+}
+
+.tax-product_tag .custom-product-tag-wrapper ul.products li.product .onsale {
+    display: none;
+}
+
+.tax-product_tag .custom-product-tag-wrapper ul.products li.product a {
+    display: block;
+    width: 100%;
+}
+
+/* Image container */
+.tax-product_tag .custom-product-tag-wrapper ul.products li.product img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0;
+    background: #fff;
+    padding: 0;
+    object-fit: contain;
+    max-height: 158px;
+}
+
+/* Product title */
+/* .tax-product_tag .custom-product-tag-wrapper .woocommerce-loop-product__title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #222;
+    margin-top: 10px;
+} */
+
+/* Price */
+.tax-product_tag .custom-product-tag-wrapper .price {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+/* Remove underline on link */
+.tax-product_tag .custom-product-tag-wrapper ul.products li.product a {
+    text-decoration: none;
+}
+
+.tax-product_tag .page-title {
+    margin-top: 10px;
+    font-family: 'Verdana';
+    font-size: 40px;
+}
+
+.custom-product-tag-wrapper ul.products li.product .woocommerce-loop-product__title {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.565;
+    margin-bottom: 10px;
+    font-weight: 400;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    color: #000000;
+    font-family: var(--heading--font-family);
+}
+
+.custom-product-tag-wrapper ul.products li.product .price {
+    color: #000000;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.565;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.custom-product-tag-wrapper .products {
+    margin-bottom: 10px;
+}

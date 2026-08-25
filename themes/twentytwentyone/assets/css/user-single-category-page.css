@@ -1,0 +1,55 @@
+body.archive.tax-product_cat .site {
+    overflow: hidden;
+}
+.trending-carousel-static > .card {
+    max-width: 295px;
+}
+.fake-col-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fake-col-wrapper .item {
+    min-height: 220px;
+}
+div.owl-carousel.trending-carousel .owl-nav button.owl-next svg, 
+div.owl-carousel.trending-carousel .owl-nav button.owl-prev svg {
+    width: 16px;
+    height: 30px;
+}
+
+p.product-tags {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.product-tags span {
+    color: #fff;
+    background: #ED018C;
+    font-size: 10px;
+    padding: 5px 8px;
+    border-radius: 14px;
+}
+@media (max-width: 767px){
+    .home-trending-toppickup-section-wrp .owl-carousel .owl-stage .item .product-card-link, .home-trending-toppickup-section-wrp .owl-carousel .owl-stage .item{
+        background: transparent;
+        border: none;
+        padding: 0;
+        box-shadow: none;
+    }
+    .category-page-wrapper div.owl-carousel.trending-carousel .owl-nav{
+        top: -36px;
+    }
+    .category-page-wrapper div.owl-carousel.trending-carousel .owl-nav button.owl-next,
+    .category-page-wrapper div.owl-carousel.trending-carousel .owl-nav button.owl-prev{
+        display: block;
+    }
+    .category-page-wrapper div.owl-carousel.trending-carousel .owl-nav button.owl-next svg,
+    .category-page-wrapper div.owl-carousel.trending-carousel .owl-nav button.owl-prev svg {
+        width: 16px;
+        height: 30px;
+    }
+}

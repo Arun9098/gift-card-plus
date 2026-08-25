@@ -1,0 +1,227 @@
+t.custom-header {
+    background-color: #1a1a1a;
+    padding: 12px 30px;
+    color: white;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-menu li a:hover {
+    opacity: 0.7;
+}
+
+.admin-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px!important;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Header base styles */
+.custom-header {
+    background-color: #111;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Main menu */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+/* Top-level menu links */
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.nav-menu li a:hover {
+    background-color: #333;
+}
+
+/* First level dropdown */
+.nav-menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #222;
+    padding: 10px 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.nav-menu li:hover>ul {
+    display: block;
+}
+
+/* Second and third-level items */
+.nav-menu li ul li {
+    position: relative;
+}
+
+.nav-menu li ul li a {
+    padding: 10px 15px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.nav-menu li ul li a:hover {
+    background-color: #444;
+}
+
+/* Child's child menu */
+.nav-menu li ul li ul {
+    top: 0;
+    left: 100%;
+    margin-left: 0;
+    position: absolute;
+    background-color: #333;
+    display: none;
+}
+
+.nav-menu li ul li:hover>ul {
+    display: block;
+}
+
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-menu li ul,
+.nav-menu li ul li,
+.nav-menu li ul li ul {
+    list-style: none;
+}
+
+.nav-menu li a:hover {
+    font-weight: bold;
+}
+
+.admin-profile .login-link {
+    color: #333;
+    /* dark gray text */
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+.admin-profile .login-link:hover {
+    background-color: #e0e0e0;
+    font-weight: 600;
+    color: #000;
+}
+/* supplier-auth.css */
+
+.supplier-auth-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 40px;
+  }
+  
+  .supplier-auth-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .supplier-auth-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  .supplier-auth-form input[type="text"],
+  .supplier-auth-form input[type="email"],
+  .supplier-auth-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .supplier-auth-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .supplier-auth-form input[type="submit"]:hover {
+    background-color: #444;
+  }
+  
+  .supplier-auth-form p a {
+    color: #0073aa;
+    text-decoration: none;
+  }
+  
+  .supplier-auth-form p a:hover {
+    text-decoration: underline;
+  }
+  
+  .supplier-auth-form p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 15px;
+  }
+  

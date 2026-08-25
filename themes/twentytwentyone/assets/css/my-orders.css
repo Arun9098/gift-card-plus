@@ -1,0 +1,224 @@
+ .my-orders-page {
+     max-width: 1200px;
+     margin: 40px auto;
+     padding: 20px;
+ }
+
+ .my-orders-page h1 {
+     margin-bottom: 30px;
+     font-size: 32px;
+     color: #333;
+ }
+
+ .orders-summary {
+     background: #f8f9fa;
+     padding: 20px;
+     border-radius: 8px;
+     margin-bottom: 30px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 15px;
+ }
+
+ .summary-item {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .summary-label {
+     font-size: 14px;
+     color: #666;
+     margin-bottom: 5px;
+ }
+
+ .summary-value {
+     font-size: 24px;
+     font-weight: 600;
+     color: #333;
+ }
+
+ .orders-table-container {
+     background: #fff;
+     padding: 30px;
+     border-radius: 8px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     overflow-x: auto;
+ }
+
+ table.dataTable thead th {
+     background: #f8f9fa;
+     font-weight: 600;
+     color: #333;
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+ }
+
+ table.dataTable tbody td {
+     color: #666;
+ }
+
+ .order-status {
+     display: inline-block;
+     padding: 5px 12px;
+     border-radius: 20px;
+     font-size: 12px;
+     font-weight: 600;
+     text-transform: uppercase;
+ }
+
+ .status-completed {
+     background: #d4edda;
+     color: #155724;
+ }
+
+ .status-processing {
+     background: #cfe2ff;
+     color: #084298;
+ }
+
+ .status-on-hold {
+     background: #fff3cd;
+     color: #856404;
+ }
+
+ .status-pending {
+     background: #f8d7da;
+     color: #721c24;
+ }
+
+ .status-cancelled {
+     background: #f8d7da;
+     color: #721c24;
+ }
+
+ .status-refunded {
+     background: #e2e3e5;
+     color: #41464b;
+ }
+
+ .order-actions {
+     display: flex;
+     gap: 10px;
+     flex-wrap: wrap;
+ }
+
+ .order-actions a.btn-view {
+     color: black !important;
+     text-decoration: underline !important;
+     background: none;
+ }
+
+ .btn-view {
+     padding: 8px 16px;
+     background: #000;
+     color: #fff;
+     border: none;
+     border-radius: 4px;
+     font-size: 14px;
+     text-decoration: none;
+     display: inline-block;
+     transition: background 0.2s;
+ }
+
+ .btn-view:hover {
+     background: #333;
+     color: #fff;
+ }
+
+ .no-orders {
+     text-align: center;
+     padding: 60px 20px;
+     color: #666;
+ }
+
+ .no-orders-icon {
+     font-size: 64px;
+     margin-bottom: 20px;
+     opacity: 0.5;
+ }
+
+ .no-orders h2 {
+     margin-bottom: 10px;
+     color: #333;
+ }
+
+ .no-orders p {
+     margin-bottom: 20px;
+ }
+
+ .btn-shop {
+     display: inline-block;
+     padding: 12px 30px;
+     background: #000;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 4px;
+     transition: background 0.2s;
+ }
+
+ .btn-shop:hover {
+     background: #333;
+ }
+
+ /* Add this to your existing styles */
+
+ /* Remove default padding from the aligned cells so our divs touch the edges */
+ table.dataTable tbody td.col-aligned {
+     padding: 0 !important;
+     vertical-align: top;
+ }
+
+ /* The magic class that aligns the rows across the 3 columns */
+ .line-item {
+     padding: 8px 10px;
+     border-bottom: 1px solid #eee;
+     min-height: 50px;
+     /* Forces all cells to match height even if empty */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     font-size: 13px;
+     line-height: 1.4;
+ }
+
+ /* Remove border from the last item in the list so it doesn't look double-bordered */
+ .line-item:last-child {
+     border-bottom: none;
+ }
+
+ .rec-email {
+     font-weight: 500;
+     color: #333;
+ }
+
+ .rec-phone {
+     font-size: 11px;
+     color: #888;
+ }
+
+ @media (max-width: 768px) {
+     .orders-table {
+         font-size: 14px;
+     }
+
+     .orders-table th,
+     .orders-table td {
+         padding: 10px 8px;
+     }
+
+     .orders-table th:nth-child(3),
+     .orders-table td:nth-child(3) {
+         display: none;
+     }
+
+     .order-actions {
+         flex-direction: column;
+     }
+
+     .btn-view {
+         width: 100%;
+         text-align: center;
+     }
+ }

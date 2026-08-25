@@ -1,0 +1,43 @@
+/**
+ * Checkout elements.
+ */
+
+p.afterpay-test-mode-warning-text {
+    text-align: center;
+    color: #f00; /* Red */
+}
+
+square-placement[data-type="logo"] + img.afterpay-logo-img {
+    float: right;
+}
+
+/* ----------------------------------------------------------------------------
+                            Express Checkout
+-----------------------------------------------------------------------------*/
+.btn-afterpay_express {
+    padding: 0 24px;
+    width: 100%;
+    height: 48px;
+    line-height: 24px;
+    border-radius: 4px;
+}
+
+.btn-afterpay_express.black-on-mint {
+    background-color: #b2fce4;
+    color: #000;
+}
+
+.btn-afterpay_express.white-on-black {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-afterpay_express[disabled] {
+    filter: saturate(0);
+}
+
+.btn-afterpay_express img {
+    display: inline;
+    vertical-align: middle;
+    height: 24px;
+}

@@ -1,0 +1,1272 @@
+/* ---------- EVENTS WRAP (2-col layout) ---------- */
+body .woocommerce-MyAccount-content .my-reminders-wrapper .events-wrap {
+    display: grid;
+    grid-template-columns: 296px 1fr;
+    gap: 57px;
+    align-items: start;
+    margin-bottom: 0;
+}
+
+/* =============================================================
+   LEFT SIDEBAR
+   ============================================================= */
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminders-sidebar {
+    width: 296px;
+    height: auto;
+    background: #ECECF0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 16px;
+
+}
+
+/* --- Calendar header --- */
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminders-calendar-view .calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .calendar-header .calendar-month-year {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    font-family: 'Inter';
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .next-priv-warpper {
+    gap: 10px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .calendar-header .calendar-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.12s;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .calendar-header .calendar-nav:hover {
+    background: #F5F5F5;
+}
+
+/* --- Calendar table --- */
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminders-calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: none;
+    min-width: 200px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminders-calendar {
+    background: #fff;
+    width: 264px;
+    gap: 20px;
+    border-radius: 8px;
+    padding: 20px;
+
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminders-calendar-table thead th {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    padding: 0 0 8px;
+    letter-spacing: 0.2px;
+    border: none;
+    font-family: 'Inter';
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminders-calendar-table tbody td {
+    text-align: center;
+    padding: 1px 0;
+    cursor: pointer;
+    border: none;
+    font-family: Inter;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminders-calendar-table tbody td.empty {
+    cursor: default;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminders-calendar-table tbody td .day-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    transition: background 0.12s;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminders-calendar-table tbody td:hover .day-number {
+    background: #F5F5F5;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminders-calendar-table tbody td.has-events .day-number {
+    color: #ED018C;
+}
+
+/* --- Sidebar filter list --- */
+.woocommerce-MyAccount-content .my-reminders-wrapper .event-filters {
+    list-style: none;
+    margin: 18px 0 0;
+    padding: 0;
+}
+
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .event-filters li a {
+    display: block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Verdana';
+    transition: background 0.12s, color 0.12s;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .event-filters li a.active,
+.woocommerce-MyAccount-content .my-reminders-wrapper .event-filters li a:hover {
+    background: #F8F8F8;
+    color: #000000;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .event-filters li a.active {
+    color: #ED018C;
+    font-weight: 400;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .event-filters li {
+    margin-bottom: 1px;
+}
+
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminders-content {
+    min-width: 0;
+    padding-top: 0;
+}
+
+/* --- Header row (title + add button) --- */
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminders-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminders-title-section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 4px;
+    font-family: 'Verdana';
+}
+
+body .woocommerce-MyAccount-content .my-reminders-wrapper .reminders-content p.reminders-subtitle {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    margin: 0;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminders-subtitle strong {
+    font-weight: 700;
+    color: #000000;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .add-reminder-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: inherit;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background 0.15s;
+    line-height: 1;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .add-reminder-btn:hover {
+    background: #333333;
+    color: #ffffff;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .add-reminder-btn .btn-icon {
+    font-size: 14px;
+    line-height: 1;
+}
+
+/* --- Occasions grid (3 cols) --- */
+.woocommerce-MyAccount-content .my-reminders-wrapper .occasions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+/* --- Individual occasion card --- */
+.woocommerce-MyAccount-content .my-reminders-wrapper .occasion-card {
+    padding-top: 16px;
+    padding-right: 12px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+    gap: 10px;
+    border-radius: 8px;
+    background: #F8F9FF;
+
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .occasion-card:hover {
+    border-color: #EAECF0;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .occasion-card .occasion-icon {
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 10px;
+    color: #ED018C;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .occasion-card .confetti-icon {
+    font-size: 18px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .occasion-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .occasion-content .shop-now-btn {
+    margin-left: auto;
+}
+.shop-now-btn.btn.btn-white-p2{
+   border: 1px solid black;
+}
+.woocommerce-MyAccount-content .my-reminders-wrapper .occasion-countdown {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 3px;
+    line-height: 1.4;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .occasion-date {
+    font-size: 12px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .occasion-title {
+    font-size: 13px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.45;
+    margin-bottom: 16px;
+    flex: 1;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .occasion-title .occasion-type {
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .shop-now-btn {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    align-self: flex-start;
+    transition: background 0.12s;
+    background: #fff;
+    color: #000000;
+    font-family: 'Arial' !important;
+    border: 1px solid #D0D5DD !important;
+    padding: 15px 29px !important;
+    border-radius: 12px 0 !important;
+    font-weight: 700 !important;
+}
+
+
+/* --- Load more button --- */
+.woocommerce-MyAccount-content .my-reminders-wrapper .load-more-events-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* =============================================================
+   ADDRESS BOOK SECTION
+   ============================================================= */
+.woocommerce-MyAccount-content .my-reminders-wrapper .address-book-section {
+    margin-top: 0;
+    padding-top: 36px;
+    border-top: 1px solid #EEEEEE;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .address-book-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 20px;
+
+}
+
+/* --- Toolbar: search + buttons --- */
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+/* Search wrapper */
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-simple-search {
+    position: relative;
+    flex: 1;
+    max-width: 380px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-simple-search .search-icon svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-simple-search .pdb-search-input {
+    width: 100%;
+    padding: 14px 60px 14px 26px;
+    border: 1px solid #ED018C;
+    border-radius: 40px;
+    font-size: 21px;
+    font-weight: 400;
+    color: #505050;
+    height: auto;
+    background: #ffffff;
+    outline: none;
+    font-family: 'Verdana';
+    transition: border-color 0.15s;
+    -webkit-appearance: none;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-simple-search .pdb-search-input::placeholder {
+    color: #505050;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-simple-search .pdb-search-input:focus {
+    border-color: #ED018C;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-simple-search .search-icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #5E5E5E;
+    display: flex;
+    align-items: center;
+}
+
+/* Action buttons */
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-list-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .icon-waraper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-list-actions .pdb-delete-btn,
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-delete-selected-btn {
+    border: 1px solid #EB148D;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Arial';
+    padding: 8px 22px;
+    line-height: normal;
+}
+
+.reminders-header .btn.btn-primary,
+.load-more-events-container .btn.btn-primary {
+    font-weight: 700;
+    align-items: center;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-list-actions .pdb-delete-btn:hover,
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-delete-selected-btn:hover:not(:disabled) {
+    background: #EB148D80;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-list-actions .pdb-delete-btn:disabled,
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-delete-selected-btn:disabled {
+    cursor: not-allowed;
+    border: 1px solid #000000;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-list-actions #pdb-add-contact-btn {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 22px;
+    line-height: normal;
+
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-list-actions #pdb-add-contact-btn:hover {
+    background: #EB148D80;
+}
+
+/* --- Hide DataTables built-in controls --- */
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper .dataTables_length,
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper .dataTables_filter {
+    display: none !important;
+}
+
+/* --- Table wrapper (horizontal scroll on mobile) --- */
+.woocommerce-MyAccount-content .my-reminders-wrapper .participants-database {
+    width: 100%;
+}
+
+/* --- Table --- */
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    border: 0;
+    overflow: auto;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table .date_of_birth-field,
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody td.phone-field {
+    white-space: nowrap;
+}
+
+/* Table head */
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody tr,
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead tr {
+    border-bottom: 1px solid #EAECF0;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .dataTables_wrapper {
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+    overflow: hidden;
+    /* important */
+    background: #fff;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead th {
+    padding: 20px 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #535862;
+    text-align: left;
+    background: #FCFCFD;
+    white-space: nowrap;
+    font-family: 'Arial';
+    border: none;
+
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead th.select-column {
+    width: 38px;
+    padding-left: 10px;
+}
+
+/* Hide default DataTables sort pseudo-elements */
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead th.sorting::before,
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead th.sorting::after,
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead th.sorting_asc::before,
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead th.sorting_asc::after,
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead th.sorting_desc::before,
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead th.sorting_desc::after {
+    display: none !important;
+}
+
+/* Dashicons filter icon in header */
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead th .dashicons {
+    font-size: 13px;
+    color: #BBBBBB;
+    vertical-align: middle;
+    margin-left: 4px;
+    position: static !important;
+}
+
+/* Table body rows */
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody tr {
+    background: #ffffff;
+    transition: background 0.1s;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody tr:hover {
+    background: #FAFAFA;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody tr.odd {
+    background: #ffffff;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody tr.even {
+    background: #ffffff;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody tr.odd:hover,
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody tr.even:hover {
+    background: #FAFAFA;
+}
+
+/* Top corners */
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead tr:first-child th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead tr:first-child th:last-child {
+    border-top-right-radius: 8px;
+}
+
+/* Bottom corners */
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody td {
+    padding: 20px 8px;
+    color: #535862;
+    font-size: 18px;
+    font-weight: 400;
+    vertical-align: middle;
+    text-align: left;
+    font-family: 'Verdana';
+    border: 0;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody td.select-column {
+    padding-left: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Checkboxes */
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead th.select-column {
+    text-align: center;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table input[type="checkbox"],
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-select-all {
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    border: 1px solid #D0D5DD;
+    border-radius: 6px;
+    /* now it will work */
+    background-color: #fff;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table input[type="checkbox"]:checked {
+    background-color: #ED018C;
+    border-color: #ED018C;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Reminder column alignment */
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody td.reminder-field {
+    text-align: center;
+    padding-left: 14px;
+}
+
+/* --- Bell buttons --- */
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminder-bell-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.12s, transform 0.1s;
+    vertical-align: middle;
+}
+.reminder-bell-button.reminder-inactive:disabled {
+    opacity:0.5;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminder-bell-button:hover {
+    background: #FFF0F8;
+    transform: scale(1.1);
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminder-bell-button:focus {
+    outline: 2px solid #ED018C;
+    outline-offset: 2px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminder-bell-button svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminder-bell-button.reminder-active svg path {
+    fill: #ffff;
+    stroke: #ED018C;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .reminder-bell-button.reminder-inactive svg path {
+    fill: none;
+    stroke: #717680;
+}
+
+/* --- DataTables pagination + info --- */
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper .dataTables_info {
+    font-size: 12px;
+    color: #888888;
+    padding-top: 14px;
+    float: left;
+    line-height: 28px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper .dataTables_paginate {
+    float: right;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-top: 12px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper .dataTables_paginate::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper .dataTables_paginate .paginate_button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #E0E0E0;
+    background: #ffffff;
+    font-size: 12px;
+    color: #000000 !important;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0 6px;
+    font-family: inherit;
+    transition: background 0.12s;
+    box-shadow: none !important;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #F5F5F5 !important;
+    color: #000000 !important;
+    border-color: #CCCCCC;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper .dataTables_paginate .paginate_button.current,
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border-color: #000000;
+    font-weight: 600;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper .dataTables_paginate .paginate_button.disabled,
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+    opacity: 0.35;
+    cursor: default;
+    background: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Clearfix after pagination block */
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper {
+    overflow-x: auto;
+}
+
+/* --- List messages (success/error) --- */
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-list-messages {
+    margin: 12px 0;
+    padding: 11px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    display: none;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-list-messages.success {
+    display: block;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-list-messages.error {
+    display: block;
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* =============================================================
+   MODALS
+   ============================================================= */
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-modal-content {
+    position: relative;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    max-width: 520px;
+    width: 92%;
+    max-height: 90vh;
+    overflow-y: auto;
+    z-index: 100001;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 24px 18px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-modal-header h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    color: #888888;
+    padding: 0;
+    transition: color 0.12s;
+    font-family: inherit;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-modal-close:hover {
+    color: #000000;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-contact-form {
+    padding: 22px 24px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group {
+    margin-bottom: 18px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group label .required {
+    color: #ED018C;
+    margin-left: 2px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group input[type="text"],
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group input[type="email"],
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group input[type="tel"],
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #EAECF0;
+    border-radius: 7px;
+    font-size: 13.5px;
+    color: #000000;
+    font-family: inherit;
+    background: #ffffff;
+    outline: none;
+    transition: border-color 0.15s;
+    -webkit-appearance: none;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group input[type="text"]:focus,
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group input[type="email"]:focus,
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group input[type="tel"]:focus,
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group input[type="date"]:focus {
+    border-color: #ED018C;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-messages {
+    display: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-messages.success {
+    display: block;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-messages.error {
+    display: block;
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 18px;
+    border-top: 1px solid #EEEEEE;
+    margin-top: 4px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-actions .pdb-cancel-btn,
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-modal .pdb-form-actions .button.pdb-cancel-btn {
+    padding: 10px 22px;
+    border: 1.5px solid #000000;
+    border-radius: 8px;
+    background: #ffffff;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #000000;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.12s;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-actions .pdb-cancel-btn:hover {
+    background: #F5F5F5;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-actions button[type="submit"],
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-modal .pdb-form-actions .button.button-primary {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #000000;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.12s;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-actions button[type="submit"]:hover,
+.woocommerce-MyAccount-content .my-reminders-wrapper .pdb-modal .pdb-form-actions .button.button-primary:hover {
+    background: #333333;
+}
+
+/* Delete confirm modal */
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-delete-confirm-modal .pdb-modal-body {
+    padding: 22px 24px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-delete-confirm-modal #pdb-delete-confirm-message {
+    font-size: 15px;
+    color: #000000;
+    margin: 0 0 20px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-delete-confirm-btn {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #dc3232;
+    border-color: #dc3232;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.12s;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper #pdb-delete-confirm-btn:hover {
+    background: #b52a2a;
+}
+
+#pdb-reminders-table_paginate {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    border-radius: 12px;
+    margin-top: 14px;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .btn-icon svg {
+    height: 22px;
+    width: 22px;
+}
+
+#pdb-reminders-table_paginate .paginate_button {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color: #2B2B2B;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+
+
+#pdb-reminders-table_paginate .paginate_button:hover {
+    background: #FFFFFF;
+    border-color: #D0D5DD;
+    color: #000000;
+}
+
+
+#pdb-reminders-table_paginate .paginate_button.current {
+    background: #FFFFFF;
+    color: #000000;
+    font-weight: 500;
+}
+
+#pdb-reminders-table_paginate .paginate_button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.woocommerce-MyAccount-content .my-reminders-wrapper .dataTables_info {
+    margin-top: 10px;
+    display: none;
+}
+
+#pdb-reminders-table_paginate span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+@media (max-width: 1200px) {
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody td,
+    .woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead th {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .woocommerce-MyAccount-content .my-reminders-wrapper .events-wrap {
+        grid-template-columns: 200px 1fr;
+        gap: 24px;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .occasions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .woocommerce-MyAccount-content .my-reminders-wrapper .occasions-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .woocommerce-MyAccount-content .my-reminders-wrapper {
+        padding: 0 16px 48px;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .address-book-section {
+        padding-top: 24px;
+    }
+
+    body .woocommerce-MyAccount-content .my-reminders-wrapper .events-wrap {
+        margin-bottom: 24px;
+    }
+
+    body .woocommerce-MyAccount-content .my-reminders-wrapper .reminders-content p.reminders-subtitle {
+        font-size: 16px;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .reminders-header {
+        flex-direction: column;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .events-wrap {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Sidebar full width, compact */
+    .woocommerce-MyAccount-content .my-reminders-wrapper .reminders-sidebar {
+        padding: 16px 14px 14px;
+    }
+
+    /* Calendar smaller */
+    .woocommerce-MyAccount-content .my-reminders-wrapper .reminders-calendar-table tbody td .day-number {
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .reminders-title-section h2 {
+        font-size: 20px;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .add-reminder-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 18px;
+    }
+
+    /* Single column cards on mobile */
+    .woocommerce-MyAccount-content .my-reminders-wrapper .occasions-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    /* Card layout tweak: icon + countdown side by side */
+    .woocommerce-MyAccount-content .my-reminders-wrapper .occasion-card {
+        padding: 16px  12px;
+    }
+
+
+
+    /* Load more full width */
+    .woocommerce-MyAccount-content .my-reminders-wrapper .load-more-events-btn,
+    .woocommerce-MyAccount-content .my-reminders-wrapper .load-more-events-container .add-reminder-btn {
+        width: 100%;
+    }
+
+    /* Address book title */
+    .woocommerce-MyAccount-content .my-reminders-wrapper .address-book-title {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    /* Toolbar stacks vertically */
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-list-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-simple-search {
+        max-width: 100%;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-simple-search .pdb-search-input {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 60px 12px 26px;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-list-actions {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    /* Table: horizontal scroll container */
+    .woocommerce-MyAccount-content .my-reminders-wrapper .participants-database,
+    .woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table {
+        min-width: 600px;
+        font-size: 18px;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table thead th {
+        padding: 10px 10px;
+        font-size: 18px;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table tbody td {
+        padding: 10px 10px;
+        font-size: 18px;
+    }
+
+    /* Pagination stacks */
+    .woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper .dataTables_info,
+    .woocommerce-MyAccount-content .my-reminders-wrapper #pdb-reminders-table_wrapper .dataTables_paginate {
+        float: none;
+        text-align: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    /* Modal full screen on mobile */
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-modal-content {
+        width: 96%;
+        max-height: 95vh;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-contact-form {
+        padding: 18px 16px;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-modal-header {
+        padding: 18px 16px 14px;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group input[type="text"],
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group input[type="email"],
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group input[type="tel"],
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-group input[type="date"] {
+        font-size: 16px;
+        /* prevent iOS zoom */
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-actions {
+        flex-direction: column-reverse;
+        gap: 8px;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-actions .pdb-cancel-btn,
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-form-actions button[type="submit"] {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    body .woocommerce-MyAccount-content .my-reminders-wrapper .events-wrap {
+        gap: 40px;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .reminders-content {
+        order: -1;
+    }
+
+    body .woocommerce-MyAccount-content .my-reminders-wrapper .events-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .reminders-calendar,
+    .woocommerce-MyAccount-content .my-reminders-wrapper .reminders-sidebar {
+        width: 100%;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .load-more-events-container {
+        margin-bottom: 0;
+    }
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-list-actions .pdb-delete-btn,
+    .woocommerce-MyAccount-content .my-reminders-wrapper #pdb-delete-selected-btn,
+    .woocommerce-MyAccount-content .my-reminders-wrapper .pdb-list-actions #pdb-add-contact-btn {
+        flex: 1;
+        font-size: 16px;
+    }
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper {
+        padding: 0 0 40px;
+    }
+
+    /* Shop now full width on mobile */
+    .woocommerce-MyAccount-content .my-reminders-wrapper .shop-now-btn {
+        width: 100%;
+        text-align: center;
+        align-self: stretch;
+        padding: 10px;
+    }
+
+
+    .woocommerce-MyAccount-content .my-reminders-wrapper .reminders-title-section h2,
+    .woocommerce-MyAccount-content .my-reminders-wrapper .address-book-title {
+        font-size: 20px;
+    }
+
+
+}

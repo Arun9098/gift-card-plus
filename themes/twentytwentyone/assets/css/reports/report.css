@@ -1,0 +1,130 @@
+.reports-wrapper {
+    padding: 30px;
+}
+
+.reports-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.reports-container h1 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+#report-type {
+    display: block;
+    width: 100%;
+    margin: 10px 0 20px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+#export-report-btn {
+    padding: 10px 18px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.reports-table-container .dataTables_wrapper{
+    overflow: auto;
+}
+.reports-table-container .dataTables_wrapper .dataTables_length,
+.reports-table-container .dataTables_wrapper .dt-buttons,
+.reports-table-container .dataTables_wrapper .dataTables_filter{
+    position: absolute;
+}
+
+.reports-table-container .dataTables_wrapper .dataTables_length{
+    left: 0;
+}
+
+.reports-table-container .dataTables_wrapper .dt-buttons{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.reports-table-container .dataTables_wrapper .dataTables_filter{
+    right: 0;
+}
+.reports-table-container .dataTables_wrapper table{
+    margin-top: 50px;
+}
+#page-loading-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+
+#page-loading-overlay.active {
+    display: flex;
+}
+
+.loading-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.dataTables_paginate .paginate_button.previous{
+    margin-right: 70px!important;
+    background : none!important;
+}
+
+.dataTables_paginate .paginate_button.previous:hover{
+    color: #111!important;
+    border: none!important;
+}
+
+.dataTables_paginate .paginate_button.next{
+    margin-left: 20px!important;
+    background : none!important;
+}
+
+.dataTables_paginate .paginate_button.next:hover{
+    color: #111!important;
+    border: none!important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:hover {
+    color: #111 !important;
+    border: none !important;
+    background: none !important;
+    background-color: transparent !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:active,
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:active {
+    box-shadow:none;
+}
+
+.reports-table-container table thead th.activated-filter-column .filter-header-text {
+    color: #408ed4;
+    font-weight: 600;
+}
+
+.reports-table-container .active_filter_wrapper .checkbox-group{
+    text-align: left;
+    padding: 0 20px;
+}
+
+/* small responsive */
+@media (max-width: 600px) {
+    .reports-container {
+        padding: 12px;
+    }
+}

@@ -1,0 +1,321 @@
+/* Reset & Container */
+    body { background-color: #F5F7FA !important; }
+    .gcp-admin-wrapper { max-width: 1200px; margin: 0 auto; padding: 0 20px 60px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #333; }
+    
+    /* Top Admin Bar (Black) */
+    .gcp-admin-topbar {
+        background-color: #1a1a1a;
+        color: #fff;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .gcp-admin-profile { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+    .gcp-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
+
+    /* Sub Header (Acme Ads dropdown style from Figma) */
+    .gcp-sub-header { text-align: right; padding-bottom: 20px; font-weight: bold; font-size: 14px; }
+
+    /* Layout Grid */
+    .gcp-card-layout {
+        display: grid;
+        grid-template-columns: 1fr 380px; /* Left Info | Right Visuals */
+        gap: 40px;
+        background: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        position: relative;
+    }
+
+    /* Back Arrow */
+    .gcp-back-link { 
+        display: inline-block; 
+        font-size: 24px; 
+        color: #000; 
+        text-decoration: none; 
+        margin-bottom: 20px; 
+    }
+
+    /* Invoice Button (Absolute Top Right of Card) */
+    .btn-invoice {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .btn-invoice:hover { background-color: #0056b3; color: #fff; }
+
+    /* Details List */
+    .gcp-details-list h1 { font-size: 24px; margin-bottom: 30px; margin-top: 0; }
+    
+    .detail-row {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        margin-bottom: 18px;
+        align-items: baseline;
+    }
+    .detail-label { font-weight: bold; font-size: 15px; color: #000; }
+    .detail-value { font-size: 15px; color: #333; }
+    
+    /* Edit Pencil Icon (Fake) */
+    .icon-edit { cursor: pointer; margin-left: 10px; font-size: 12px; }
+
+    /* Right Column (Visuals) */
+    .gcp-visual-column { display: flex; flex-direction: column; align-items: flex-end; padding-top: 60px; /* Space for invoice button */ }
+    
+    .gcp-main-image {
+        width: 100%;
+        max-width: 320px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .gcp-main-image img { width: 100%; height: auto; display: block; }
+
+    /* Swap Link */
+    .gcp-swap-link {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #000;
+        text-decoration: underline;
+        font-weight: 500;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    /* Action Buttons Row */
+    .gcp-actions-row {
+        display: flex;
+        gap: 10px;
+        margin-top: auto;
+    }
+    .btn-action {
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: 13px;
+        cursor: pointer;
+        color: #333;
+        transition: all 0.2s;
+    }
+    .btn-action:hover { border-color: #999; }
+    .btn-blue-outline { border-color: #007bff; color: #007bff; font-weight: 600; }
+
+    /* Bottom Table */
+    .gcp-items-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 40px;
+        background: #fff;
+        border: 1px solid #eee;
+    }
+    .gcp-items-table th { text-align: left; padding: 15px; background: #fafafa; border-bottom: 1px solid #eee; font-size: 13px; color: #666; font-weight: bold; }
+    .gcp-items-table td { padding: 15px; border-bottom: 1px solid #eee; font-size: 14px; vertical-align: middle; }
+    
+    .gcp-table-thumb { width: 60px; height: 40px; object-fit: cover; border-radius: 4px; }
+    .status-badge {
+        background-color: #e6f9f0;
+        color: #28a745;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        display: inline-block;
+    }
+/* --- MODAL STYLES --- */
+.gcp-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark dim overlay */
+    z-index: 99999; /* High z-index to sit on top of WP admin bar if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gcp-modal-content {
+    background: #fff;
+    padding: 40px;
+    width: 500px;
+    max-width: 90%;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.gcp-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+    line-height: 1;
+}
+.gcp-modal-close:hover { color: #333; }
+
+.gcp-modal-content h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.gcp-modal-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Specific Buttons for Portal */
+.btn-black {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 60px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+}
+.btn-black:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px;
+}
+.btn-link:hover {
+    color: #0056b3;
+}
+
+.gcp-success-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.gcp-success-icon {
+    margin: 30px 0;
+}
+
+.gcp-success-icon svg {
+    display: inline-block; /* Centers the SVG */
+}
+
+.gcp-success-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Ensure views are hidden by default via CSS class if needed, 
+   though JS handles the switch */
+.gcp-modal-view {
+    /* Transitions can be added here if desired */
+}
+
+
+.gcp-form-group {
+    margin-bottom: 20px;
+}
+
+.gcp-form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.gcp-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; /* Important for width:100% */
+}
+
+.gcp-input:focus {
+    border-color: #000;
+    outline: none;
+}
+
+.gcp-radio-group label {
+    display: inline-block;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+select.gcp-input {
+    height: 40px; /* Force height to match text inputs */
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* OTP Input Styles */
+.gcp-otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gcp-otp-digit {
+    width: 45px;
+    height: 55px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.gcp-otp-digit:focus {
+    border-color: #000;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Chrome/Safari/Edge: Remove number spinners */
+.gcp-otp-digit::-webkit-outer-spin-button,
+.gcp-otp-digit::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+.gcp-otp-digit[type=number] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,727 @@
+.track-card-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.track-card-page h1 {
+    margin-bottom: 35px;
+    font-size: 32px;
+    color: #333;
+}
+
+.search-form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.search-form {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.btn-search {
+    padding: 12px 30px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.btn-search:hover {
+    background: #333;
+}
+
+.help-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.message {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.success-message {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.gift-cards-results {
+    background: #fff;
+    padding: 0;
+    border-radius: 0;
+    margin-top: 0;
+}
+
+.gift-cards-results h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.order-group {
+    margin-bottom: 40px;
+}
+
+.order-group:last-child {
+    margin-bottom: 0;
+}
+
+.order-group-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.gift-cards-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.gift-cards-table thead {
+    background: #f8f9fa;
+}
+
+.gift-cards-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+.gift-cards-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: top;
+}
+
+.gift-cards-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.gift-cards-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.recipient-info {
+    line-height: 1.6;
+}
+
+.recipient-info strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/*     
+    .recipient-email {
+        font-size: 14px;
+        color: #666;
+    } */
+
+.gift-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* .card-details {
+        font-size: 14px;
+        color: #333;
+        font-weight: 500;
+    } */
+
+.gift-card-status {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+}
+
+.status-draft {
+    background: #e2e3e5;
+    color: #41464b;
+}
+
+.status-ordered {
+    background: #cfe2ff;
+    color: #084298;
+}
+
+.status-processing {
+    background: #cfe2ff;
+    color: #084298;
+}
+
+.status-on-hold {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-delivered {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-opened {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+
+.status-bounced {
+    background: #f8d7da;
+    color: #842029;
+}
+
+.status-failed {
+    background: #f8d7da;
+    color: #842029;
+}
+
+.btn-resend {
+    padding: 8px 16px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-resend:hover {
+    background: #333;
+}
+
+.btn-resend-all {
+    padding: 10px 20px;
+    border: 1px solid black;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-resend-all:hover {
+    background: #333;
+}
+
+/* Resend Modal */
+.resend-modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ABABABDB;
+    overflow: auto;
+    margin: 0;
+}
+
+.resend-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resend-modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 720px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.resend-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.resend-modal-header h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #000;
+}
+
+.resend-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resend-modal-close:hover {
+    color: #000;
+}
+
+.resend-modal-body {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.resend-modal-body p {
+    margin-bottom: 15px;
+    color: #000;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.resend-modal-body .recipient-email-display {
+    font-weight: 600;
+    color: #333;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.resend-modal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-resend-confirm {
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: 600;
+}
+
+.btn-resend-confirm:hover {
+    background: #000;
+    color: #fff;
+}
+
+.btn-resend-cancel {
+    padding: 10px 20px;
+    background: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: 600;
+}
+
+.btn-resend-cancel:hover {
+    background: #e0e0e0;
+}
+
+.resend-success-message {
+    background: transparent;
+    border: none;
+    color: #2D2D2D;
+    padding: 0;
+    border-radius: 4px;
+    margin: 20px 0;
+    flex-direction: column;
+    gap: 32px 0 !important;
+    font-size: 20px;
+}
+
+.resend-error-message {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+
+.no-results-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.resend-modal-content:has(.resend-success-message) .resend-modal-header {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.resend-modal-content:has(.resend-success-message) .resend-modal-header h3 {
+    display: none;
+}
+
+.resend-modal-content:has(.resend-success-message) .resend-modal-header .resend-modal-close {
+    margin-left: auto;
+}
+
+.resend-modal-content:has(.resend-success-message) .resend-content,
+.resend-modal-content:has(.resend-success-message) .resend-modal-footer {
+    display: none;
+}
+
+.resend-success-message p {
+    font-size: 20px;
+    color: #2D2D2D;
+}
+
+.btn-resend-all {
+    border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .btn-search {
+        width: 100%;
+    }
+
+    .gift-cards-table {
+        font-size: 14px;
+    }
+
+    .gift-cards-table th,
+    .gift-cards-table td {
+        padding: 10px 8px;
+    }
+
+    .resend-modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+
+.track-card-page {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 45px 0 80px 0;
+    text-align: center;
+    font-family: 'Verdana';
+
+}
+
+.track-card-page>.container-sm {
+    max-width: 822px;
+}
+
+/* Title */
+.track-card-page h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Help text */
+.track-card-page .help-text {
+    font-size: 22px;
+    color: #000;
+    max-width: 100%;
+    margin: 0 auto 22px;
+    line-height: 1.6;
+}
+
+/* Form container */
+.track-card-page .search-form-container {
+    justify-content: center;
+    padding: 32px 0;
+    box-shadow: none;
+}
+
+/* Form layout */
+.track-card-page .search-form {
+    width: 100%;
+    max-width: 650px;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    gap: 0;
+}
+
+/* Each row */
+.track-card-page .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+/* Labels */
+.track-card-page .form-group label {
+    width: 170px;
+    text-align: left;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0;
+}
+
+/* Inputs */
+.track-card-page .form-group input {
+    flex: 1;
+    height: 50px;
+    padding: 0 14px;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    outline: none;
+    max-width: 464px;
+}
+
+.track-card-page .form-group input::placeholder {
+    color: #999;
+}
+
+/* Focus state */
+.track-card-page .form-group input:focus {
+    border-color: #000;
+}
+
+/* Button */
+.track-card-page .btn-search {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 36px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    max-width: 150px;
+    margin: 8px auto 0px auto;
+    left: 85px;
+    position: relative;
+    width: 100%;
+    font-family: 'Arial';
+}
+
+.track-card-page .btn-search:hover {
+    background: #222;
+}
+
+.order-group-title {
+    text-align: left;
+}
+
+.flex-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+.table-style1 tr td,
+.table-style1 tr th {
+    border: none;
+    padding: 16px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.table-style1 tr th {
+    border-bottom: 1px solid #E7EBF4;
+    background: #fff;
+}
+
+.gift-cards-results .btn-resend-all {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-resend.btn.underline:hover {
+    background: transparent;
+    color: #000000;
+}
+
+.btn.underline {
+    background: transparent;
+    padding: 0;
+    color: #000;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: none;
+}
+
+@media (max-width: 1200px) {
+
+    .table-style1 tr td,
+    .table-style1 tr th {
+        font-size: 14px;
+    }
+
+    .btn.underline {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .track-card-page {
+        padding: 45px 20px 80px 20px;
+    }
+
+    .track-card-page h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .track-card-page .help-text {
+        font-size: 18px;
+    }
+
+    .track-card-page .form-group {
+        margin-bottom: 20px;
+    }
+
+    .track-card-page .form-group label {
+        width: 150px;
+        font-size: 16px;
+    }
+
+    .track-card-page .search-form {
+        max-width: 100%;
+    }
+
+    .track-card-page .form-group input {
+        max-width: 100%;
+    }
+
+    .track-card-page .btn-search {
+        left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .flex-heading {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .gift-cards-results .btn-resend-all {
+        font-size: 16px;
+    }
+
+    .table-overflow table {
+        min-width: 700px;
+    }
+
+    .table-overflow {
+        overflow-x: auto;
+    }
+
+    .track-card-page .help-text {
+        font-size: 16px;
+    }
+
+    .track-card-page .form-group {
+        flex-direction: column;
+    }
+
+    .track-card-page .form-group input {
+        flex: auto;
+    }
+
+    .track-card-page .form-group label {
+        width: 100%;
+        margin: 0 0 8px 0;
+    }
+
+    .track-card-page .btn-search {
+        font-size: 16px;
+        margin: 0 auto;
+        left: 0;
+    }
+}

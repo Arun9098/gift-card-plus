@@ -1,0 +1,315 @@
+/* General Container Styles */
+.my-orders-page {
+    font-family: 'Verdana';
+    max-width: 100%;
+    padding: 0 0 40px 0;
+    background: #fff;
+}
+
+/* Header Styles */
+.my-orders-page h1 {
+    color: #000;
+    margin: 52px 0 48px 0;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Search Container */
+.my-orders-page .search-container {
+    position: relative;
+    margin: 0 30px 32px 60px;
+    max-width: 400px;
+}
+
+.my-orders-page .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+    font-size: 14px;
+    right: auto;
+}
+.my-orders-page .search-icon::placeholder{
+    color:#667085;
+}
+
+.my-orders-page .search-input {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid #D0D5DD;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    height: 44px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.my-orders-page .search-input:focus {
+    border-color: #999;
+}
+
+.my-orders-page .search-input::placeholder {
+    color: #999;
+}
+
+/* Orders Table Container */
+.my-orders-page .orders-table-container {
+    padding: 0;
+}
+
+/* DataTables Wrapper */
+.my-orders-page .dataTables_wrapper {
+    position: relative;
+}
+
+/* Hide default DataTables controls */
+.my-orders-page .dataTables_length,
+.my-orders-page .dataTables_filter {
+    display: none;
+}
+
+/* Table Styles */
+.my-orders-page .display.dataTable {
+    width: 100% !important;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: #fff;
+    overflow: unset;
+}
+
+/* Table Header */
+.my-orders-page .display.dataTable thead th {
+    background: #FCFCFD;
+    color: #535862;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #EAECF0;
+    white-space: nowrap;
+    border-top: 2px solid #EAECF0;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+}
+
+/* Sorting indicators */
+.my-orders-page .display.dataTable thead th.sorting,
+.my-orders-page .display.dataTable thead th.sorting_asc,
+.my-orders-page .display.dataTable thead th.sorting_desc {
+    cursor: pointer;
+    position: relative;
+    padding-right: 25px;
+}
+
+
+
+/* Table Body */
+.my-orders-page .display.dataTable tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.my-orders-page .display.dataTable tbody tr:hover {
+    background: #fafafa;
+}
+
+.my-orders-page .display.dataTable tbody tr.odd {
+    background: #fff;
+}
+
+.my-orders-page .display.dataTable tbody tr.even {
+    background: #fff;
+}
+
+.my-orders-page .display.dataTable tbody td {
+    padding: 16px;
+    font-size: 16px;
+    color: #000000;
+    vertical-align: top;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* Column Aligned Cells */
+.my-orders-page .col-aligned {
+    vertical-align: top;
+}
+
+/* Line Items - for multiple recipients/items */
+.my-orders-page .line-item {
+    padding:4px 0;
+    line-height: 1.5;
+}
+
+/* Recipient Email Styling */
+/* .my-orders-page .rec-email {
+    color: #333;
+    font-size: 14px;
+} */
+ .order-no span{
+    text-decoration: underline;
+ }
+
+/* Order Status Badges */
+.my-orders-page .order-status {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    min-width: 100px;
+}
+span.order-status.status-checkout-draft {
+    background: #BDBDBD80;
+    color: #505050;
+}
+
+/* Complete Status - Green */
+.my-orders-page .order-status.status-completed,
+.my-orders-page .order-status.status-processing {
+    background: #ECFDF3;
+    color: #027A48;
+}
+
+/* Pending Status - Gray */
+.my-orders-page .order-status.status-pending, .my-orders-page .order-status.status-on-hold {
+    background: #f5f5f5;
+    color: #505050;
+}
+
+/* Order Actions */
+.my-orders-page .order-actions {
+    text-align: left;
+}
+
+.my-orders-page .btn-view {
+    text-decoration: underline;
+    font-weight: 400;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    color: #535862;
+}
+.dataTables_wrapper table.dataTable td a{
+    color: #535862;
+}
+
+.my-orders-page .btn-view:hover {
+    color: #000;
+}
+
+/* DataTables Info */
+.my-orders-page .dataTables_info {
+    display: none;
+}
+
+/* Pagination Styles */
+.my-orders-page .dataTables_paginate {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.my-orders-page .dataTables_paginate a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 2px;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.my-orders-page .dataTables_paginate a.current {
+    font-weight: 600;
+    color: #000;
+}
+
+.my-orders-page .dataTables_paginate a:hover {
+    color: #000;
+}
+
+.my-orders-page .dataTables_paginate a.previous,
+.my-orders-page .dataTables_paginate a.next {
+    color: #999;
+}
+
+.my-orders-page .dataTables_paginate a.previous:hover,
+.my-orders-page .dataTables_paginate a.next:hover {
+    color: #333;
+}
+
+div.dataTables_wrapper .dataTables_paginate .paginate_button.first, 
+div.dataTables_wrapper .dataTables_paginate .paginate_button.previous, 
+div.dataTables_wrapper .dataTables_paginate .paginate_button.last, 
+div.dataTables_wrapper .dataTables_paginate .paginate_button.next {
+    font-size: 0 !important;
+    border-radius: 0;
+    position: relative;
+}
+div.dataTables_wrapper .dataTables_paginate .paginate_button.next:after, 
+div.dataTables_wrapper .dataTables_paginate .paginate_button.previous:after {
+    content: "";
+    background: url(../images/pagination-arrow.svg);
+    background-size: contain;
+    width: 16px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+div.dataTables_wrapper .dataTables_paginate .paginate_button.previous:after {
+    transform: translateY(-50%) rotate(180deg);
+}
+div.dataTables_wrapper .dataTables_paginate .paginate_button {
+    border-radius: 0;
+    color: #000000DE;
+}
+div.dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover:after, 
+div.dataTables_wrapper .dataTables_paginate .paginate_button.next:hover:after{
+    filter: invert(1);
+}
+div.dataTables_wrapper .dataTables_paginate{
+    margin: 32px 0;
+}
+#my-orders-table .td-order-status {
+    align-content:center
+}
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .my-orders-page h1 {
+        font-size: 24px;
+        padding: 15px 20px;
+    }
+    
+    .my-orders-page .search-container {
+        margin: 0 auto 20px auto;
+    }
+    
+    .my-orders-page #my-orders-table_wrapper {
+        overflow-x: auto;
+    }
+    
+    .my-orders-page .display.dataTable {
+        font-size: 14px;
+        min-width: 800px;
+    }
+    
+    .my-orders-page .display.dataTable thead th,
+    .my-orders-page .display.dataTable tbody td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
